@@ -1,0 +1,95 @@
+﻿@page "/Signup"
+ <!DOCTYPE html>
+<html>
+
+<head>
+   
+      
+    <style>
+         .imagesB {
+            /*background-image: url("/plugins/images/background.png");*/
+            background-image: url("/img/Rectangle.png");
+            background-color: #ffffff;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .card-container{
+                display: flex!important;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        input[type=radio] {
+    width: 17px;
+    height: 17px;
+        }
+        .package-card{
+            border: 1px solid #d2d2d2;
+            border-radius: 7px;
+        }
+         .selected {
+            border-color: #d2d2d2;
+            color: #d2d2d2;
+        }
+    </style>
+</head>
+
+<body class="container-fluid bg-white vh-100 overflow-hidden imagesB p-0">
+    <div class="card-container mt-5 pt-5">
+      <div class="title">
+    <h4 class=" text-center text-white">Sign Up to Yield</h4>
+    </div>
+    <div class="card mt-4" style="min-height:30rem;width:100%;max-width:800px;border-radius: 3rem">
+        <div class="card-body">
+            <div class="card-title mt-4 mb-4 text-center text-muted" style="font-weight:500;font-size:20px">
+                Join as Brand or Influencer
+            </div>
+            <div class="d-flex justify-content-center align-content-center">
+                <div class="hiring-influ px-2 w-25 py-2 package-card"  id="div1">
+                    <div class="d-flex  justify-content-between mt-2">
+                    <img src="/icons-login/person.png" class="image-icon"/>
+                      <div class="form-check">
+                  <input type="radio" class="form-check-input" id="radio1" name="radioGroup" value="" >
+                   
+      
+                     </div>
+                     </div>
+                <p class="text-muted">I'm brand,<br />hiring influencer</p>
+                </div>
+                 <div class="looking-influ px-2 w-25 py-2 ml-5 package-card"  id="div2">
+                     <div class="d-flex  justify-content-between mt-2">
+                      <img src="/icons-login/person.png" class="image-icon"/>
+                     <div class="form-check">
+            <input type="radio" class="form-check-input" id="radio2" name="radioGroup" value="" >
+            
+     
+                 </div>
+                  </div>
+                  <p class="text-muted">I'm influencer,<br />looking for brand</p>
+                  
+            </div>
+           
+        </div>
+        <div class="mt-5 text-center">
+         <button class="btn btn-secondary mb-5 w-50" type="button">Create Account</button>
+       
+         
+            <div>
+                <label class="text-muted">Already have  an account?</label><a href="#" class="text-primary font-bold">Log In</a>
+            </div>
+             </div>
+    </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+@code {
+
+}
