@@ -70,6 +70,17 @@
         .nav-pills {
             border-top-right-radius: 9px !important;
         }
+        .profile-image{
+            border: 1px solid #737070;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            flex-direction: column;
+            align-items: center;
+            background: #f2f5f6;
+            border-radius: 1rem;
+            height: 15rem;
+        }
     </style>
 </head>
 
@@ -184,7 +195,10 @@
                             <div class="tab-pane" id="captain">
                                 <div class="row">
                                     <div class="col-sm-2 ">
-                                        <img src="/signup/upload.png" class="image-icons" style="width:30px; height:30px;" />
+                                        <div class="profile-image">
+                                            <img src="/signup/upload.png" class="image-icons " style="width:30px; height:30px; margin-bottom:1rem;" />
+                                            <span class="font-weight-bold">Uploade Image</span>
+                                        </div>
                                     </div>
                                     <div class="col-sm-10 ">
                                         <div class="form-group row">
@@ -220,13 +234,13 @@
                                             <label for="inputEmail3" class="col-sm-2 text-bold text-center col-form-label">Reach</label>
                                             <div class="col-sm-9 col-sm-offset-0">
                                                 <label class="radio-inline">
-                                                    <input type="radio" name="optradio" checked>Global
+                                                    <input type="radio" name="optradio1" >Global
                                                 </label>
                                                 <label class="radio-inline">
-                                                    <input type="radio" name="optradio">National
+                                                    <input type="radio" name="optradio1">National
                                                 </label>
                                                 <label class="radio-inline">
-                                                    <input type="radio" name="optradio">Local
+                                                    <input type="radio" name="optradio1">Local
                                                 </label>
                                             </div>
                                         </div>
@@ -234,7 +248,7 @@
                                             <label for="inputEmail3" class="col-sm-2 text-bold text-center col-form-label">For</label>
                                             <div class="col-sm-9 col-sm-offset-0">
                                                 <label class="radio-inline">
-                                                    <input type="radio" name="optradio" checked>Male
+                                                    <input type="radio" name="optradio" >Male
                                                 </label>
                                                 <label class="radio-inline">
                                                     <input type="radio" name="optradio">Female
@@ -270,6 +284,20 @@
                     </form>
                 </div>
             </div> <!-- wizard container -->
+             <div class="form-group row ml-5 mt-4">
+                                           
+                                            <div class="col-12">
+                        
+                    <div class="custom-control custom-checkbox mr-sm-2">
+                        <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                            <label class="custom-control-label text-light" for="customControlAutosizing">
+                                Yes, I understand and agree to the Yield Terms of Services, Including the User Agreement and Privacy Policy.
+                            </label>
+                 
+                    </div>
+
+                                            </div>
+                                        </div>
         </div>
     </div>
 
